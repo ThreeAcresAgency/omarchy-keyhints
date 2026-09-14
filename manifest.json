@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "brendan.keyhints",
+  "id": "io.github.threeacresagency.keyhints",
   "name": "Key hints",
   "version": "0.1.0",
   "author": "Brendan",

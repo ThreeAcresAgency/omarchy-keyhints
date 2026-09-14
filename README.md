@@ -33,7 +33,7 @@ and nothing is hard-coded.
 
 ```bash
 omarchy plugin add https://github.com/ThreeAcresAgency/omarchy-keyhints.git --enable
-~/.config/omarchy/plugins/brendan.keyhints/install-tracker.sh
+~/.config/omarchy/plugins/io.github.threeacresagency.keyhints/install-tracker.sh
 ```
 
 The second step installs the usage tracker. Omarchy's plugin installer only
@@ -50,7 +50,7 @@ and nothing is ever marked learned automatically.
 Move the widget wherever you like:
 
 ```bash
-omarchy bar move brendan.keyhints --section left
+omarchy bar move io.github.threeacresagency.keyhints --section left
 ```
 
 ## Using it
@@ -65,13 +65,13 @@ omarchy bar move brendan.keyhints --section left
 | **Next** | — | Step the rotation |
 | Arrow keys / Enter / Esc | — | Next-prev / got it / close |
 
-From a terminal (`~/.config/omarchy/plugins/brendan.keyhints/keyhints.py`):
+From a terminal (`~/.config/omarchy/plugins/io.github.threeacresagency.keyhints/keyhints.py`):
 
 ```bash
 keyhints.py stats             # usage leaderboard and learned count
 keyhints.py unlearn "Full width"   # put a binding back in rotation
 keyhints.py reset             # forget manual learned/snoozed state, keep the log
-omarchy-shell brendan.keyhints toggle   # open/close the popup over IPC
+omarchy-shell io.github.threeacresagency.keyhints toggle   # open/close the popup over IPC
 ```
 
 ## Tuning
@@ -103,8 +103,8 @@ State lives in `~/.local/state/omarchy/keyhints/` (`usage.log`, `state.json`).
 ## Uninstall
 
 ```bash
-~/.config/omarchy/plugins/brendan.keyhints/install-tracker.sh --uninstall
-omarchy plugin remove brendan.keyhints
+~/.config/omarchy/plugins/io.github.threeacresagency.keyhints/install-tracker.sh --uninstall
+omarchy plugin remove io.github.threeacresagency.keyhints
 rm -r ~/.local/state/omarchy/keyhints   # optional
 ```
 

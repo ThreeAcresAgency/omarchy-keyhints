@@ -15,8 +15,8 @@ import qs.Ui
 //   scroll = step suggestions back and forth
 Panel {
   id: root
-  moduleName: "brendan.keyhints"
-  ipcTarget: "brendan.keyhints"
+  moduleName: "io.github.threeacresagency.keyhints"
+  ipcTarget: "io.github.threeacresagency.keyhints"
 
   readonly property bool vertical: bar ? bar.vertical : false
   readonly property int barSize: bar ? bar.barSize : Style.bar.sizeHorizontal
