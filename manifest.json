@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "brendan.keyhints",
+  "name": "Key hints",
+  "version": "0.1.0",
+  "author": "Brendan",
+  "description": "Shows one Omarchy keybinding worth learning right now, based on what you already use",
+  "kinds": ["bar-widget"],
+  "entryPoints": { "barWidget": "KeyHints.qml" },
+  "barWidget": {
+    "displayName": "Key hints",
+    "description": "One keybinding to learn, picked from usage and context",
+    "category": "Compositor",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "defaults": { "maxWidth": 360 },
+    "schema": [
+      { "key": "maxWidth", "type": "number", "label": "Max width (px)" }
+    ]
+  }
+}
